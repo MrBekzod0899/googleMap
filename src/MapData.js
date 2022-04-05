@@ -27,7 +27,7 @@ export default function MapData() {
     setPosition([lat,lng])
     try {
       const res = await fetch(
-        `http://api.positionstack.com/v1/reverse?access_key=${process.env.REACT_APP_MAP_KEY}&query=${lat},${lng}`
+        `http://api.positionstack.com/v1/reverse?access_key=8ea3a92fbb31f644b087942fca577cae&query=${lat},${lng}`
       );
       const data = await res.json();
         setName(data.data[0].country);
